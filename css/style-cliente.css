@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .logo {
+    width: 100px;
+}
+
+#menu {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img{
+    width: 80px; 
+}
+
+#menu .user-icon {
+    width: 30px; 
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background: white;
+}
+
+#menu ul ul li {
+    width: 200px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#menu ul ul li a {
+    padding: 10px 15px;
+}
+
+#menu li:hover > ul {
+    display: block;
+}
+
+/* Estilos para o ícone do menu */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu .logo {
+        order: -1;
+        margin-right: auto;
+        margin-left: 10px;
+    }
+
+    #menu .user-icon {
+        margin-left: auto;
+    }
+
+    #menu ul {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #menu ul:not(.active) {
+        display: none;
+    }
+
+    #menu ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+    }
+
+    /* Mostrar o ícone do menu */
+    .menu-icon {
+        display: block;
+    }
+}
+
+.user-icon-wrapper {
+    position: relative;
+}
+
+.user-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 0;
+    list-style: none;
+}
+
+.user-menu.active {
+    display: block;
+}
+
+h2 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Estilos para os campos do formulário */
+form label {
+    display: block;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select,
+form textarea,
+form input[type="number"],
+form input[type="email"],
+form input[type="file"] {
+    width: 450px;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'poppins', sans-serif; 
+}
+
+/* Estilos para os botões */
+form button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    border: none;
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #008000;
+    color: white;
+}
+
+form input[type="reset"] {
+    border: none;
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FF0000;
+    color: white;
+}
