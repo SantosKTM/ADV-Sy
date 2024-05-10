@@ -1,0 +1,66 @@
+.navbar {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 8px gray;
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.navbar-itens {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.list-item a {
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.list-item a:hover {
+    color: lightblue;
+}
+
+.user-icon-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 40px;
+}
+
+.dropdown-container {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px gray;
+    z-index: 1;
+    right: -18px;
+    top: 0;
+}
+
+.user-icon-container:hover div {
+    display: flex;
+}
